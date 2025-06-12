@@ -1,6 +1,6 @@
-# 📊 STOX AI: Stock Price Trend Predictor with LSTM
+# 📊 STOXENSE AI: Stock Price Trend Predictor with LSTM
 
-Welcome to **STOX AI**, an AI-powered interactive dashboard that predicts stock price trends using a Long Short-Term Memory (LSTM) deep learning model. It includes visual analysis with technical indicators like **50-day Moving Average (MA50)** and **Relative Strength Index (RSI)**.
+Welcome to **STOXENSE AI**, an AI-powered interactive dashboard that predicts stock price trends of different companies using a Long Short-Term Memory (LSTM) deep learning model. It includes visual analysis with technical indicators like **50-day Moving Average (MA50)** and **Relative Strength Index (RSI)**.
 
 ---
 
