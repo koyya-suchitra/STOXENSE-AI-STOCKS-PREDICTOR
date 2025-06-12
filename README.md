@@ -41,40 +41,31 @@ stockprice/
 
 ## ⚙️ Setup Instructions (Local)
 
-1. **Clone the repository:**
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/koyya-suchitra/Stock-Price-Predictor.git
-cd stockprice
-Create a virtual environment:
+cd Stock-Price-Predictor
+```
 
-bash
-Copy
-Edit
+### 2. Create a virtual environment
+```bash
 python -m venv venv
-Activate the virtual environment:
-
+```
+### 3. Activate the virtual environment
 Windows:
-
-bash
-Copy
-Edit
+```bash
 venv\Scripts\activate
+```
 macOS/Linux:
-
-bash
-Copy
-Edit
+```bash
 source venv/bin/activate
-Install dependencies:
-
-bash
-Copy
-Edit
+```
+### 4. Install dependencies
+```bash
 pip install -r requirements.txt
-Run the Streamlit app:
-
-bash
-Copy
-Edit
+```
+### 5. Run the Streamlit app
+```bash
 streamlit run app.py
+```
