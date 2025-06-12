@@ -1,0 +1,47 @@
+# Ignore the virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Ignore Python bytecode/cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+
+# Ignore OS junk files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore logs
+*.log
+
+# Ignore data files (optional, uncomment if needed)
+# *.csv
+# *.xlsx
+
+# Ignore Jupyter/IPython checkpoints
+.ipynb_checkpoints/
+
+# Ignore Streamlit config/state files
+.streamlit/config.toml
+.streamlit/*.json
+
+# Ignore compiled notebooks
+*.nbconvert.ipynb
+
+# Ignore IDE/project settings
+.vscode/
+.idea/
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/
+
+# Ignore test coverage files
+htmlcov/
+.coverage
+.tox/
