@@ -9,7 +9,7 @@ import os
 from utils import fetch_stock_data, preprocess_data
 
 st.set_page_config(page_title="📈 LSTM Stock Predictor", layout="wide")
-st.title("📊 STOX AI: Stock Price Trend Predictor with LSTM")
+st.title("📊 STOXENSE AI: Stock Price Trend Predictor with LSTM")
 
 ticker = st.text_input("Enter Stock Ticker (e.g., TSLA, INFY.NS, AAPL)", value="TSLA")
 
