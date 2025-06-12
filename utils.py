@@ -29,21 +29,27 @@ def fetch_stock_data(ticker):
 
 
 def preprocess_data(df):
-    from sklearn.preprocessing import MinMaxScaler
-    import numpy as np
+    # Drop NaNs
+    df = df.dropna()
 
     # Select only numeric columns
-    numeric_df = df.select_dtypes(include=[np.number])
+    numeric_df = df.select_dtypes(include=['number'])
+
+    # If no numeric data, raise an error
+    if numeric_df.empty:
+        raise ValueError("Dataframe has no numeric columns after filtering. Check the input data.")
 
     scaler = MinMaxScaler()
     scaled = scaler.fit_transform(numeric_df)
 
-    # Convert to numpy array and create X, y as per your logic
-    X, y = [], []
+    X = []
+    y = []
+    window_size = 50
 
-    for i in range(60, len(scaled)):
-        X.append(scaled[i - 60:i])
-        y.append(scaled[i, 0])  # Assuming the target is the first column like 'Close'
+    for i in range(window_size, len(scaled)):
+        X.append(scaled[i - window_size:i])
+        y.append(scaled[i, 0])  # predict 'Close'
 
     return np.array(X), np.array(y), scaler
+
 
