@@ -27,15 +27,10 @@ def fetch_stock_data(ticker):
     df.dropna(inplace=True)
     return df
 
-
 def preprocess_data(df):
-    # Drop NaNs
     df = df.dropna()
-
-    # Select only numeric columns
     numeric_df = df.select_dtypes(include=['number'])
 
-    # If no numeric data, raise an error
     if numeric_df.empty:
         raise ValueError("Dataframe has no numeric columns after filtering. Check the input data.")
 
@@ -48,8 +43,8 @@ def preprocess_data(df):
 
     for i in range(window_size, len(scaled)):
         X.append(scaled[i - window_size:i])
-        y.append(scaled[i, 0])  # predict 'Close'
+        y.append(scaled[i, 0])  # Predict 'Close'
 
-    return np.array(X), np.array(y), scaler
+    return np.array(X), np.array(y), scaler, scaled
 
 

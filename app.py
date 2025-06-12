@@ -16,7 +16,7 @@ ticker = st.text_input("Enter Stock Ticker (e.g., TSLA, INFY.NS, AAPL)", value="
 if st.button("Predict") or ticker:
     with st.spinner("Fetching and processing data..."):
         df = fetch_stock_data(ticker)
-        X, y, scaler = preprocess_data(df)
+        X, y, scaler, scaled = preprocess_data(df)
 
         # Show the technical indicator chart
         st.subheader(f"📉 {ticker} Stock Closing Price vs 50-Day Moving Average")
