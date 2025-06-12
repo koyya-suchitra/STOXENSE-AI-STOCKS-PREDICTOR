@@ -28,13 +28,22 @@ def fetch_stock_data(ticker):
     return df
 
 
-def preprocess_data(df, look_back=60):
-    scaler = MinMaxScaler()
-    scaled = scaler.fit_transform(df)
+def preprocess_data(df):
+    from sklearn.preprocessing import MinMaxScaler
+    import numpy as np
 
+    # Select only numeric columns
+    numeric_df = df.select_dtypes(include=[np.number])
+
+    scaler = MinMaxScaler()
+    scaled = scaler.fit_transform(numeric_df)
+
+    # Convert to numpy array and create X, y as per your logic
     X, y = [], []
-    for i in range(look_back, len(scaled)):
-        X.append(scaled[i - look_back:i])
-        y.append(scaled[i, 0])  # Close price
+
+    for i in range(60, len(scaled)):
+        X.append(scaled[i - 60:i])
+        y.append(scaled[i, 0])  # Assuming the target is the first column like 'Close'
 
     return np.array(X), np.array(y), scaler
+
