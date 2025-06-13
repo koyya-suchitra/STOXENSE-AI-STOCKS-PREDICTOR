@@ -1,8 +1,8 @@
-streamlit==1.35.0
+streamlit==1.25.0
 yfinance==0.2.37
 pandas==2.2.2
-numpy==1.26.4
-matplotlib==3.9.0
+numpy==1.24.4
+matplotlib==3.7.3
 seaborn==0.13.2
-scikit-learn==1.4.2
-tensorflow==2.15.0
+scikit-learn==1.2.2
+tensorflow==2.12.0
