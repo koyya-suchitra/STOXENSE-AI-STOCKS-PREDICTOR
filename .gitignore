@@ -25,9 +25,6 @@ desktop.ini
 # Ignore Jupyter/IPython checkpoints
 .ipynb_checkpoints/
 
-# Ignore Streamlit config/state files
-.streamlit/config.toml
-.streamlit/*.json
 
 # Ignore compiled notebooks
 *.nbconvert.ipynb
