@@ -64,9 +64,13 @@ You can input the following company ticker symbols in the app to fetch and predi
 
 > ℹ️ **Note**: For Indian stocks listed on NSE, append `.NS` to the ticker symbol.  
 > Example: `INFY.NS` for Infosys, `TCS.NS` for Tata Consultancy Services.
-> 
+>  
 ---
 
+## 🤖 Credits
+Created by Suchitra Koyya as a project to demonstrate LSTM-based stock prediction using deep learning and Streamlit.
+
+---
 ## ⚙️ Setup Instructions (Local)
 
 ### 1. Clone the repository
