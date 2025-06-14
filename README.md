@@ -1,43 +1,38 @@
 # 📊 STOXENSE AI: Stock Price Trend Predictor with LSTM
 
-Welcome to **STOXENSE AI**, an AI-powered interactive dashboard that predicts stock price trends of different companies using a Long Short-Term Memory (LSTM) deep learning model. It includes visual analysis with technical indicators like **50-day Moving Average (MA50)** and **Relative Strength Index (RSI)**.
+Welcome to **STOXENSE AI**, an AI-powered stock trend prediction dashboard. This project uses **LSTM (Long Short-Term Memory)** models to forecast stock price movements based on historical prices and technical indicators like **Moving Average (MA50)** and **Relative Strength Index (RSI)**.
+
+The app is built with **Streamlit**, features live or cached data support using `.csv` files, and is deployable to **Streamlit Cloud**.
 
 ---
 
 ## 🚀 Features
 
-- 📈 Predict stock price trends using historical data
-- 🤖 LSTM-based AI model built with TensorFlow/Keras
-- 📊 Visualizes **Closing Price**, **MA50**, and **RSI**
-- 📤 Option to save trained models for future use
-- 🔎 Choose any stock ticker (e.g., `TSLA`, `AAPL`, `INFY.NS`)
-- 🌐 Live deployment using **Streamlit Cloud**
+- 📈 Predicts stock price trends using past data
+- 🤖 Deep learning with LSTM networks (Keras + TensorFlow)
+- 📊 Visual indicators: Closing Price, MA50, and RSI
+- 🧠 Trains the model on-the-fly (10 epochs)
+- 💾 Saves trained models for reuse
+- 🔍 Supports both live data fetch and offline `.csv` fallback
+- 🌐 Deployable on Streamlit Cloud (without needing live API access)
 
 ---
 
 ## 📦 Tech Stack
 
-- **Python**, **Pandas**, **NumPy**
-- **TensorFlow / Keras** for LSTM modeling
-- **Scikit-learn** for normalization
-- **Matplotlib** for plotting
-- **yfinance** for live stock data
-- **Streamlit** for web UI
+- **Python**
+- **TensorFlow / Keras** – LSTM model
+- **scikit-learn** – Normalization
+- **yfinance** – Historical stock data
+- **Pandas**, **NumPy** – Data wrangling
+- **Matplotlib** – Charting
+- **Streamlit** – UI and deployment
 
 ---
 
 ## 📁 Project Structure
+<pre> <code> stockprice/ ├── app.py # Main Streamlit dashboard ├── stock_lstm.ipynb # Jupyter notebook for model dev/testing ├── utils.py # Stock data fetch & preprocessing (with CSV fallback) ├── requirements.txt # Python dependencies ├── model/ # Saved LSTM models (.h5) ├── data/ # Cached stock data in CSV format ├── .gitignore # Exclude venv and model files └── venv/ # Virtual environment (ignored) </code> </pre>
 
-stockprice/
-├── app.py # Streamlit frontend app
-├── stock_lstm.ipynb # Jupyter notebook for dev/testing
-├── utils.py # Data processing functions
-├── requirements.txt # Dependencies
-├── .gitignore # Git ignore rules
-├── model/ # Saved LSTM models
-└── venv/ # Virtual environment (ignored by Git)
-
----
 
 ## ⚙️ Setup Instructions (Local)
 
