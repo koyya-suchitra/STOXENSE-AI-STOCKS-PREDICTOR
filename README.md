@@ -76,7 +76,7 @@ Created by Suchitra Koyya as a project to demonstrate LSTM-based stock predictio
 ### 1. Clone the repository
 
 ```bash
-git clone [https://github.com/koyya-suchitra/Stock-Price-Predictor.git](https://github.com/koyya-suchitra/STOXENSE-AI-STOCKS-PREDICTOR.git)
+git clone https://github.com/koyya-suchitra/STOXENSE-AI-STOCKS-PREDICTOR.git
 cd Stock-Price-Predictor
 ```
 
