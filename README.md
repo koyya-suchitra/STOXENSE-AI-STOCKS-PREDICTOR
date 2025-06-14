@@ -49,7 +49,23 @@ Predicts and plots closing prices.
 Displays Actual vs Predicted graph.
 
 ---
+## 💡 Example Stock Tickers You Can Use
 
+You can input the following company ticker symbols in the app to fetch and predict stock price trends.
+
+| Company     | Ticker   |
+|-------------|----------|
+| Tesla       | TSLA     |
+| Apple       | AAPL     |
+| Infosys     | INFY.NS  |
+| TCS         | TCS.NS   |
+| Google      | GOOGL    |
+| Microsoft   | MSFT     |
+
+> ℹ️ **Note**: For Indian stocks listed on NSE, append `.NS` to the ticker symbol.  
+> Example: `INFY.NS` for Infosys, `TCS.NS` for Tata Consultancy Services.
+> 
+---
 
 ## ⚙️ Setup Instructions (Local)
 
