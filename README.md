@@ -4,6 +4,8 @@ Welcome to **STOXENSE AI**, an AI-powered stock trend prediction dashboard. This
 
 The app is built with **Streamlit**, features live or cached data support using `.csv` files, and is deployable to **Streamlit Cloud**.
 
+## STOXENSE AI APP LINK:stoxense-ai.streamlit.app
+
 ---
 
 ## 🚀 Features
