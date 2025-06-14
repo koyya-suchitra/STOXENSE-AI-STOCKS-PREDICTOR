@@ -33,7 +33,7 @@ The app is built with **Streamlit**, features live or cached data support using 
 ## 📁 Project Structure
 <pre> <code> stockprice/ ├── app.py # Main Streamlit dashboard ├── stock_lstm.ipynb # Jupyter notebook for model dev/testing ├── utils.py # Stock data fetch & preprocessing (with CSV fallback) ├── requirements.txt # Python dependencies ├── model/ # Saved LSTM models (.h5) ├── data/ # Cached stock data in CSV format ├── .gitignore # Exclude venv and model files └── venv/ # Virtual environment (ignored) </code> </pre>
 ---
-📌 How it Works
+# 📌 How it Works
 ### Data Fetching
 App tries to load stock data from data/{ticker}.csv.
 If not found and running locally, it uses yfinance to fetch fresh data and caches it as a .csv.
