@@ -1,9 +1,7 @@
-streamlit
-yfinance
-pandas
 numpy
-scikit-learn
+pandas
+yfinance
 matplotlib
-tensorflow
-seaborn
-
+scikit-learn
+tensorflow==2.13.0
+streamlit
