@@ -14,7 +14,7 @@ def fetch_stock_data(ticker, force_live=False):
     else:
         try:
             import yfinance as yf
-            df = yf.download(ticker, start="2018-01-01", end=today, auto_adjust=True)
+            df = yf.download(ticker, start="2021-01-01", end=today, auto_adjust=True)
             os.makedirs("data", exist_ok=True)
             df.to_csv(file_path)
         except Exception as e:
