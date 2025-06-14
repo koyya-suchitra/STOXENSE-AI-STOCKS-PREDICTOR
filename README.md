@@ -1,6 +1,6 @@
 # 📊 STOXENSE AI: Stock Price Trend Predictor with LSTM
 
-Welcome to **STOXENSE AI**, an AI-powered stock trend prediction dashboard. This project uses **LSTM (Long Short-Term Memory)** models to forecast stock price movements based on historical prices and technical indicators like **Moving Average (MA50)** and **Relative Strength Index (RSI)**.
+Welcome to **STOXENSE AI**, an AI-powered stock trend prediction dashboard. This project uses **LSTM (Long Short-Term Memory)** models to forecast stock price movements for numerous companies based on historical prices and technical indicators like **Moving Average (MA50)** and **Relative Strength Index (RSI)**.
 
 The app is built with **Streamlit**, features live or cached data support using `.csv` files, and is deployable to **Streamlit Cloud**.
 
