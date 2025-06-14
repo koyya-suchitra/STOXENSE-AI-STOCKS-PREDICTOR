@@ -40,7 +40,7 @@ if st.button("Predict") or ticker:
         ])
         model.compile(optimizer='adam', loss='mean_squared_error')
 
-        st.info("🧠 Training model... (10 epochs)")
+        st.info("🧠 Training model... (3 epochs)")
         model.fit(X, y, epochs=10, batch_size=32, verbose=0)
 
         # Make predictions
