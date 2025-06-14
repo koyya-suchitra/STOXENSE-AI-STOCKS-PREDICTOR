@@ -1,17 +1,26 @@
 # utils.py
 import numpy as np
 import pandas as pd
-import yfinance as yf
 from sklearn.preprocessing import MinMaxScaler
 import datetime
+import os
 
-def fetch_stock_data(ticker):
-    import datetime
-    import yfinance as yf
+def fetch_stock_data(ticker, force_live=False):
     today = datetime.date.today().strftime('%Y-%m-%d')
-    df = yf.download(ticker, start="2018-01-01", end=today, auto_adjust=True)
+    file_path = f"data/{ticker}.csv"
 
-    # 👇 FIX: Drop multi-index if present
+    if not force_live and os.path.exists(file_path):
+        df = pd.read_csv(file_path, index_col=0, parse_dates=True)
+    else:
+        try:
+            import yfinance as yf
+            df = yf.download(ticker, start="2018-01-01", end=today, auto_adjust=True)
+            os.makedirs("data", exist_ok=True)
+            df.to_csv(file_path)
+        except Exception as e:
+            raise RuntimeError(f"❌ Failed to fetch data for {ticker}: {str(e)}")
+
+    # Drop multi-index if present
     if isinstance(df.columns, pd.MultiIndex):
         df.columns = df.columns.get_level_values(0)
 
