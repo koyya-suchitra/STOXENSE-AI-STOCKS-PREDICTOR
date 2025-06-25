@@ -45,7 +45,7 @@ Calculates 50-day moving average (MA50) and RSI.
 Normalizes the data using MinMaxScaler.
 Generates input sequences for LSTM.
 ### Model Training
-A 2-layer LSTM model is trained for 10 epochs.
+A 2-layer LSTM model is trained for 3 epochs.
 Saves model to model/{ticker}_lstm_model.h5.
 ### Prediction
 Predicts and plots closing prices.
